@@ -9,3 +9,76 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon .core {
+  fill: var(--background-color);
+  transition: fill var(--time-animation-m) linear 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--border-color);
+  transition: fill var(--timing-animation-m) linear;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-color);
+  transition: fill var(--time-animation-m) linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-color);
+  transition: fill var(--time-animation-m) linear;
+}
+
+.like-icon .main-body {
+  fill: var(--background-color);
+  transition: fill var(--time-animation-m) linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--border-color);
+  transition: fill var(--time-animation-m) linear var(--time-animation-xs);
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-color);
+  transition: fill var(--time-animation-m) linear var(--time-animation-xs);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-color);
+  transition: fill var(--time-animation-m) linear var(--time-animation-xs);
+}
+
+.like-icon .contour {
+  fill: var(--border-color);
+  transition: fill var(--time-animation-s) linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-color);
+  transition: fill var(--time-animation-m) linear 0.06s;
+}
+
+@keyframes heart-pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
