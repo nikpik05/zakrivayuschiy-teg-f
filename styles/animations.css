@@ -15,7 +15,7 @@
 }
 
 .like-icon .core {
-  fill: var(--background-color);
+  fill: transparent;
   transition: fill var(--time-animation-m) linear 0.03s;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .like-icon .main-body {
-  fill: var(--background-color);
+  fill: transparent;
   transition: fill var(--time-animation-m) linear;
 }
 
@@ -62,6 +62,14 @@
 .like-icon.is-liked .contour {
   fill: var(--animation-color);
   transition: fill var(--time-animation-m) linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-pulse var(--time-animation-m) ease-in var(--time-animation-s) 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-blink var(--time-animation-m) ease-in var(--time-animation-m) 1 alternate;
 }
 
 @keyframes heart-pulse {
