@@ -88,6 +88,7 @@
     0 -1px var(--background-color);
   inset-block-start: 28px;
   inset-inline-end: 25px;
+  z-index: 1;
 }
 
 .card-image {
@@ -257,6 +258,7 @@
   block-size: 28px;
   inline-size: 28px;
   fill: var(--background-color);
+  background-color: var(--background-color);
   position: relative;
   z-index: 1;
 }
@@ -308,6 +310,11 @@
 @media (width > 375px) {
   .page__button {
     flex-direction: row;
+  }
+
+  .floppy-icon {
+  block-size: 21px;
+  inline-size: 21px;
   }
 }
 

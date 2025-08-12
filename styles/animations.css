@@ -64,6 +64,10 @@
   transition: fill var(--time-animation-m) linear 0.06s;
 }
 
+.like-icon .heart {
+  transform-origin: center;
+}
+
 .like-icon.is-liked .heart {
   animation: heart-pulse var(--time-animation-m) ease-in var(--time-animation-s) 1 alternate;
 }
